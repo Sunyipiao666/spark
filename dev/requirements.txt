@@ -61,10 +61,12 @@ googleapis-common-protos-stubs==2.2.0
 grpc-stubs==1.24.11
 
 # TorchDistributor dependencies
-torch<=2.0.1
+torch<=2.7.1
 torchvision
 torcheval
 
 # DeepspeedTorchDistributor dependencies
 deepspeed; sys_platform != 'darwin'
 
+jupyter-core>=5.8.0 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.4 # not directly required, pinned by Snyk to avoid a vulnerability
